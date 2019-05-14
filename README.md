@@ -1,10 +1,11 @@
+
 # FFG-Framework
 [![Build Status](https://api.travis-ci.org/NegativeThree/FFG-Framework.svg?branch=master)](https://api.travis-ci.org/NegativeThree/FFG-Framework)
-The Multitude of Frameworks by FFGFlash
+### The Multitude of Frameworks by FFGFlash
 
-Frameworks
-: [ffg-framework/discord.js](#discordjs)
-: [ffg-framework/console.js](#consolejs)
+#### Frameworks
+- [ffg-framework/discord.js](#discordjs)
+- [ffg-framework/console.js](#consolejs)
 
 ## /discord.js
 ### An expansion on the already existing Discord.JS library to make bots quicker and easier.
@@ -13,8 +14,8 @@ Frameworks
 "use strict";
 const Discord = require("ffg-framework/discord.js");
 ```
-Contributors
-: FFGFlash
+#### Contributors
+- FFGFlash
 
 ## /console.js
 ### An expansion of the built-in JavaScript console
@@ -32,8 +33,9 @@ con.write("This is new...").nl().write("Very New!").warn();
 
 con.log(JSON.stringify(con.logs));
 ```
-Contributors
-: FFGFlash
 
-Authors
-: FFGFlash
+#### Contributors
+- FFGFlash
+
+#### Authors
+- FFGFlash
