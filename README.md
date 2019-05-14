@@ -11,8 +11,7 @@
 - [ffg-framework/discord.js](#discordjs)
 - [ffg-framework/console.js](#consolejs)
 
-## /discord.js
-[to-top](#ffg-framework)
+## /discord.js/[\.\.](#ffg-framework)
 ### An expansion on the already existing Discord.JS library to make bots quicker and easier.
 #### Example
 ```js
@@ -22,8 +21,7 @@ const Discord = require("ffg-framework/discord.js");
 #### Contributors
 - FFGFlash
 
-## /console.js
-[to-top](#ffg-framework)
+## /console.js/[\.\.](#ffg-framework)
 ### An expansion of the built-in JavaScript console
 #### Example
 ```js
