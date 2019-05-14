@@ -1,0 +1,24 @@
+{
+  "name": "ffg-framework",
+  "version": "1.0.0",
+  "description": "The Multitude of Frameworks by FFGFlash",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NegativeThree/FFG-Framework.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Node"
+  ],
+  "author": "FFGFlash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NegativeThree/FFG-Framework/issues"
+  },
+  "homepage": "https://github.com/NegativeThree/FFG-Framework#readme",
+  "dependencies": {
+    "discord.js": "^11.5.0"
+  }
+}
