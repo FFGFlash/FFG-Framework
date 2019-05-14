@@ -1,6 +1,6 @@
 
 
-# FFG Framework
+# /ffg-framework/
 [![Build Status](https://api.travis-ci.org/NegativeThree/FFG-Framework.svg?branch=master)](https://api.travis-ci.org/NegativeThree/FFG-Framework)
 ### The Multitude of Frameworks by FFGFlash
 
@@ -8,8 +8,8 @@
 - FFGFlash
 
 #### Frameworks
-- [ffg-framework/discord.js](#discordjs)
-- [ffg-framework/console.js](#consolejs)
+- [/ffg-framework/discord.js/](#discordjs)
+- [/ffg-framework/console.js/](#consolejs)
 
 ## /discord.js/[\.\.](#ffg-framework)
 ### An expansion on the already existing Discord.JS library to make bots quicker and easier.
