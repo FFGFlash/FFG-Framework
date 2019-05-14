@@ -39,7 +39,7 @@ class Console {
 
   write() {
     let message = Array.from(arguments).join(" ");
-    return new Message(this, message);
+    return new Console.Message(this, message);
   }
 
   log() {
@@ -97,5 +97,6 @@ class Console {
 }
 
 Console.logs = [];
+Console.Message = Message;
 
 module.exports = Console;
