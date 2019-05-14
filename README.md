@@ -3,8 +3,8 @@
 The Multitude of Frameworks by FFGFlash
 
 Frameworks
-: [ffg-framework/discord.js](#/discord.js)
-: [ffg-framework/console.js](#/console.js)
+: [ffg-framework/discord.js](#discordjs)
+: [ffg-framework/console.js](#consolejs)
 
 ## /discord.js
 ### An expansion on the already existing Discord.JS library to make bots quicker and easier.
