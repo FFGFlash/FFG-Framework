@@ -1,5 +1,5 @@
 # /ffg-framework/
-[![Build Status](https://api.travis-ci.org/NegativeThree/FFG-Framework.svg?branch=master)](https://api.travis-ci.org/NegativeThree/FFG-Framework)
+[![Build Status](https://api.travis-ci.org/NegativeThree/FFG-Framework.svg?branch=master)](https://travis-ci.org/NegativeThree/FFG-Framework)
 ### The Multitude of Frameworks by FFGFlash
 #### Authors
 - FFGFlash
