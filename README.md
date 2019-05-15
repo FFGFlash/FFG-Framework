@@ -1,27 +1,25 @@
 # /ffg-framework/
 [![Build Status](https://api.travis-ci.org/NegativeThree/FFG-Framework.svg?branch=master)](https://api.travis-ci.org/NegativeThree/FFG-Framework)
 ### The Multitude of Frameworks by FFGFlash
-
 #### Authors
 - FFGFlash
-
 #### Frameworks
 - [/ffg-framework/discord.js/](#discordjs)
 - [/ffg-framework/console.js/](#consolejs)
 - [/ffg-framework/bitdata.js/](#bitdatajs)
-
 ## /discord.js/[\.\.](#ffg-framework)
 ### An expansion on the already existing Discord.JS library to make bots quicker and easier.
+#### Contributors
+- FFGFlash
 #### Example
 ```js
 "use strict";
 const Discord = require("ffg-framework/discord.js");
 ```
-#### Contributors
-- FFGFlash
-
 ## /console.js/[\.\.](#ffg-framework)
 ### An expansion of the built-in JavaScript console
+#### Contributors
+- FFGFlash
 #### Example
 ```js
 "use strict";
@@ -36,7 +34,6 @@ con.write("This is new...").nl().write("Very New!").warn();
 
 con.log(JSON.stringify(con.logs));
 ```
-
 #### Documentation
 ```js
 /**
@@ -140,12 +137,10 @@ message.error();
  */
 message.warn();
 ```
-
-#### Contributors
-- FFGFlash
-
 ## /bitdata.js/[\.\.](#ffg-framework)
 ### The Bitdata Framework Allows for Easy Creation of Binary Options/Configs.
+#### Contributors
+- FFGFlash
 #### Example
 ```js
 "use strict";
