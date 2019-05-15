@@ -231,3 +231,59 @@ Bitdata.serialize(flag);
  */
 Bitdata.FLAGS;
 ```
+## /event.js/[\.\.](#ffg-framework)
+### The Event Framework Allows for Easy Asynchronous on Emit Events.
+#### Contributors
+- FFGFlash
+#### Example
+```js
+"use strict";
+const EventHandler = require("ffg-framework/event.js");
+
+let eventHandler = new EventHandler();
+
+eventHandler.on("call1", data => {
+	console.log(data);
+}).on("call2", data => {
+	console.log(data);
+});
+
+eventHandler.emit("call1");
+eventHandler.emit("call1", {
+	foo: "bar",
+	bar: "foo",
+	foobar: "barfoo"
+});
+eventHandler.emit("call2", "foobar");
+```
+
+#### Documentation
+```js
+/**
+ * @author FFGFlash
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+eventHandler = new EventHandler();
+
+/**
+ * Add a New Listener to the EventHandler Instance.
+ * @param name The Name of the Event.
+ * @param callback The Callback for said Event.
+ * @return The EventHandler Instance.
+ */
+eventHandler.on(name, callback);
+
+/**
+ * Emit an Event on the EventHandler Instance.
+ * @param name The Name of the Event.
+ * @param arguments The Arguments to be Parsed to the Event Callback.
+ * @return undefined.
+ */
+eventHandler.emit(name, ...arguments);
+
+/**
+ * A Complete List of all Events and Callbacks.
+ */
+eventHandler.events;
+```
