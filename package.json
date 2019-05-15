@@ -1,11 +1,11 @@
 {
   "name": "ffg-framework",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Multitude of Frameworks by FFGFlash",
   "main": "index.js",
   "scripts": {
-		"test": "node test.js"
-	},
+    "test": "node test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NegativeThree/FFG-Framework.git"
