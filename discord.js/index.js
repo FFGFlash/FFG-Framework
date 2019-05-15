@@ -4,9 +4,9 @@ const client = new discord.Client();
 class ArgumentTypes {
   constructor() {
     this.bitfield = 0;
-    let ArgumentTypes = Array.from(arguments);
-    for (var i in ArgumentTypes) {
-      let type = ArgumentTypes.serialize(ArgumentTypes[i]);
+    let types = Array.from(arguments);
+    for (var i in types) {
+      let type = ArgumentTypes.serialize(types[i]);
       this.add(type);
       if (this.has(type)) continue;
       this.bitfield += type;
@@ -44,8 +44,8 @@ class ArgumentTypes {
     type = ArgumentTypes.serialize(type);
     type = Number(type >>> 0).toString(2);
     let has = true;
-    let ArgumentTypes = this.toBits();
-    if (ArgumentTypes.substring(type.length - 1, type.length) != 1) {
+    let types = this.toBits();
+    if (types.substring(type.length - 1, type.length) != 1) {
       has = false;
     }
     return has;
