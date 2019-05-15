@@ -183,9 +183,9 @@ console.log(example3.toBits(), example3.bitfield);
  * @author FFGFlash
  * @version 1.0.0
  * @since 1.0.0
- * @param BitdataResolvable Either a String or Number Which can be Resolved to the Bitfield.FLAGS.
+ * @param FlagResolvable Either a String or Number Which can be Resolved to the Bitfield.FLAGS.
  */
-bitdata = new Bitdata();
+bitdata = new Bitdata(...flags);
 
 /**
  * The Number Representation of the Bitdata.
