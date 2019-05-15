@@ -7,6 +7,7 @@
 - [/ffg-framework/discord.js/](#discordjs)
 - [/ffg-framework/console.js/](#consolejs)
 - [/ffg-framework/bitdata.js/](#bitdatajs)
+- [/ffg-framework/event.js/](#eventjs)
 ## /discord.js/[\.\.](#ffg-framework)
 ### An expansion on the already existing Discord.JS library to make bots quicker and easier.
 #### Contributors
