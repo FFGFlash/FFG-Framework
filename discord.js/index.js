@@ -1,5 +1,6 @@
 const discord = require("discord.js");
 const Bitdata = require("../bitdata.js");
+const EventHandler = require("../event.js");
 const client = new discord.Client();
 
 class ArgumentTypes extends Bitdata {
@@ -76,8 +77,9 @@ class Argument {
 
 Argument.Types = ArgumentTypes;
 
-class Command {
+class Command extends EventHandler {
 	constructor(name) {
+		super();
 		Object.defineProperty(this, "name", {value: name, writable: false});
 		this.description = "No Description Provided.";
 		this.hidden = false;
@@ -112,8 +114,34 @@ class Command {
 
 Command.Argument = Argument;
 Command.List = {};
+Command.Prefix = "!";
+
+class Embed {
+	constructor(content) {
+		if (content) this.content = content;
+	}
+
+	set(property, value) {
+		this[property] = value;
+		return this;
+	}
+
+	setTitle(title) {
+		return this.set("title", title);
+	}
+
+	setDescription(description) {
+		return this.set("description", description);
+	}
+
+	setColor(color) {
+		return this.set("color", color);
+	}
+}
 
 exports.ArgumentTypes = ArgumentTypes;
 exports.Argument = Argument;
 exports.Command = Command;
+exports.Embed = Embed;
+exports.setPrefix = prefix => (Command.Prefix = prefix);
 exports.login = token => client.login(token);
