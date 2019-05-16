@@ -9,6 +9,17 @@ class Bitdata {
     }
 	}
 
+	toArray() {
+		let arr = [];
+		for (let k in this.constructor.FLAGS) {
+			if (!this.constructor.FLAGS.hasOwnProperty(k)) continue;
+			let v = this.constructor.FLAGS[k];
+			if (!this.has(v)) continue;
+			arr.push(k.toUpperCase());
+		}
+		return arr;
+	}
+
 	toBits() {
 		return Number(this.bitfield >>> 0).toString(2);
 	}
@@ -27,7 +38,7 @@ class Bitdata {
 
 	has(flag) {
 		flag = Number(this.constructor.serialize(flag) >>> 0).toString(2);
-		return this.toBits().substring(this.toBits().length - flag.length, this.toBits().length) == flag;
+		return Number(this.toBits().substring(this.toBits().length - flag.length, this.toBits().length - flag.length + 1)) === 1;
 	}
 
   static get ALL() {

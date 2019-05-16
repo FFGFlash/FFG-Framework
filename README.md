@@ -171,13 +171,17 @@ example2.add(0b10).remove(2).add(0b111);
 console.log(example1.toBits(), example1.bitfield);
 console.log(example2.toBits(), example2.bitfield);
 console.log(example3.toBits(), example3.bitfield);
+console.log(example1.has("OPTION_A"), example1.has("OPTION_B"), example1.has("OPTION_C"));
+console.log(example2.has("OPTION_A"), example2.has("OPTION_B"), example2.has("OPTION_C"));
+console.log(example3.has("OPTION_A"), example3.has("OPTION_B"), example3.has("OPTION_C"));
+console.log(example1.toArray(), example2.toArray(), example3.toArray());
 ```
 
 #### Documentation
 ```js
 /**
  * @author FFGFlash
- * @version 1.0.0
+ * @version 1.1.1
  * @since 1.0.0
  * @param FlagResolvable Either a String or Number Which can be Resolved to the Bitfield.FLAGS.
  */
@@ -214,6 +218,12 @@ bitdata.remove(flag);
  * @return A Boolean Whether or not it has the Flag.
  */
 bitdata.has(flag);
+
+/**
+ * Returns an Array of FlagResolvables.
+ * @return An Array Containing FlagResolvable Strings.
+ */
+bitdata.toArray();
 
 /**
  * The Bitfield Value of All Flags.
